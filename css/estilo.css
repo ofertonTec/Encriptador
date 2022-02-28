@@ -171,4 +171,35 @@ body {
 /*FIN: Estilos del footer*/
 
 
+@media screen and (max-width:680px) {
+	
+	.instrucciones{
+		display: grid;
+		justify-items: center;
+		grid-gap: 32px;
+		grid-template-columns: repeat(1,1fr);
+		grid-template-areas: "imagen-objetivo"
+							  "objetivo";
+		
+	}
+	.instrucciones .imagen-objetivo{
+		grid-area: imagen-objetivo;
+		width: auto;
+		padding-bottom: 32px;
+	}
+	.instrucciones .objetivo{
+		grid-area: objetivo;
+		color: #004D40;
+		font-size: 22px;
+		padding: 50px;
+	}
+	.footer{
+		margin-top: 50px;
+		height: 400px;
+		padding: 100px 0;
+		font-size: 32px;
+	}
+
+	
+}
 
