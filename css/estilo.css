@@ -1,0 +1,174 @@
+body {
+	height: 100vh;
+	background: #E0F2F1;
+	font-family: 'Raleway', sans-serif;
+	color: #E0F2F1;
+	display: grid;
+	min-height: 100vh;
+	grid-template-rows: auto 1fr auto;
+}
+
+/*INICIO: Estilos del header*/
+.header{
+	width: 940px;
+	background: #26A69A;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	
+
+}
+.header .imagen-header{
+	width: 130px;
+	padding: 10px;
+	display: grid;
+	justify-self: center;
+	box-shadow: lawngreen;
+	
+}
+.header .titulo-header{
+	font-size: 32px;
+	font-weight: bold;
+	grid-area: "titulo-header";
+	display: grid;
+	justify-items: start;
+	align-items: center;
+}
+.header .correo{
+	display: grid;
+	justify-items: center;
+	align-items: center;
+}
+/*FIN: Estilos del header*/
+
+
+/*INICIO: Estilos del main*/
+
+.contenido{
+	width: 940px;
+	margin: 0 auto;
+	margin-top: 32px;
+	margin-bottom: 32px;
+	
+}
+.instrucciones{
+	display: grid;
+	grid-gap: 32px;
+	align-items: center;
+	grid-template-columns: repeat(2,1fr);
+	grid-template-areas: "objetivo imagen-objetivo";
+	
+}
+.instrucciones .objetivo{
+	grid-area: objetivo;
+	color: #004D40;
+	padding-left: 50%;
+	font-size: 18px;
+}
+.instrucciones .imagen-objetivo{
+	grid-area: imagen-objetivo;
+	width: 300px;
+	padding-bottom: 32px;
+}
+.encriptar{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: "label label"
+						 "input input"
+						 "botones botones";
+}
+.encriptar .label{
+	color: #004D40;
+	font-size: 22px;
+	grid-area: label;
+	text-align: center;
+	padding: 10px 0;
+}
+.encriptar .label:hover{
+	font-size: 28px;;
+}
+.encriptar .input{
+	grid-area: input;
+	width: 50%;
+	height: 36px;
+	font-size: 22px;
+	display: grid;
+	justify-self: center;	
+}
+.encriptar .botones{
+	grid-area: botones;
+	margin: 32px 0;
+	width: 50%;
+	display: grid;
+	justify-self: center;
+	justify-items: center;
+	grid-template-columns: repeat(3,1fr);
+}
+.encriptar .botones input{
+	background: #009688;
+	width: 150px;
+	border-style: none;
+	padding: 15px;
+	color: #E0F2F1;
+	font-size: 16px;
+}
+.encriptar .botones input:hover{
+	background: #004D40;
+	cursor: pointer;
+}
+
+.desencriptar{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-template-rows: repeat(3, auto);
+	justify-items: center;
+	grid-gap: 32px;
+	grid-template-areas: "label label"
+						 "input input"
+						 "btnCopiar btnCopiar";
+}
+.desencriptar .label{
+	grid-area: label;
+	text-align: center;
+	font-size: 22px;
+	color: #004D40;
+}
+.desencriptar .input{
+	grid-area: input;
+	width: 50%;
+	height: 36px;
+	font-size: 22px;
+	display: grid;
+	justify-self: center;
+}
+.desencriptar .btnCopiar{
+	grid-area: btnCopiar;
+	background: #009688;
+	width: 150px;
+	border-style: none;
+	padding: 15px;
+	color: #E0F2F1;
+	font-size: 16px;
+
+}
+
+/*FIN: Estilos del main*/
+
+
+
+/*INICIO: Estilos del footer*/
+
+.footer{
+	width: 940px;
+	margin: 0 auto;
+	background: #26A69A;
+}
+.footer p{
+	padding: 32px;
+	text-align: center;
+}
+/*FIN: Estilos del footer*/
+
+
+

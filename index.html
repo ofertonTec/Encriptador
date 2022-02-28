@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<head>
+	<title>Encriptador</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+
+<body>
+
+	<header class="header">
+		<img class="imagen-header" src="img/logo.png" alt="logo de mi pagina">
+		<h1 class="titulo-header">Encriptador</h1>
+		<p class="correo">joel.llacsahuache@upeu.edu.pe</p>
+	</header>
+
+
+	<main class="contenido">
+		<section class="instrucciones">
+			<p class="objetivo">
+				Lo que se busca es que a partir de una palabra, frase que usted ingresa pueda encriptarla para comunicar
+				un mensaje que se dificil de comprender por las demas personas excepto por usted.
+				Asi mismo podra comprender el mensaje desencriptandola.
+			</p>
+			<img class="imagen-objetivo" src="img/objetivo.png" alt="">
+		</section>
+
+		<section class="encriptar">
+			<label class="label">Solo letras minúsculas, sin acento</label>
+			<input class="input" type="text" id="inputtexto" placeholder="Ingrese el texto aqui">
+			<ul class="botones">
+				<li><input type="button" id="encriptarTT" value="Encriptar"></li>
+				<li><input type="button" id="desencriptarTT" value="Desencriptar"></li>
+				<li><input type="button" id="limpiar" value="Limpiar"></li>
+			</ul>
+		</section>
+		<section class="desencriptar">
+			<label class="label">Mensaje Encriptada</label>
+			<input class="input" type="text" id="mensaje" placeholder="Ingrese el texto aqui">
+			<input class="btnCopiar" type="submit" value="Copiar" id="btn-copy">
+		</section>
+
+	</main>
+
+	<footer class="footer">
+		<p>&copy; Desarrollado por Joel Llacsahuache Copia 2022</p>
+	</footer>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
