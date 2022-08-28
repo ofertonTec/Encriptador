@@ -1,32 +1,31 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Raleway', sans-serif;
     
 }
 
 .container {
-    background: #001510;  
-    width: 90%;
-    margin: 0 auto;
+    
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "header header"
                         "article aside"
                         "footer footer";
     gap: 32px;
-    padding: 32px;
 }
 .header{
     grid-area: header;
+    background: #c00!important; 
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    padding: 10px 32px;
 }
 .titulo_header{
     font-size: 32px;
     color: #fff;
-}
-.line_header{
-    height: 2px;
-    background-color: #033d30;
-    color: red;
 }
 .text_header{
     margin-top: 10px;
@@ -35,9 +34,7 @@
 }
 .article{
     grid-area: article;
-    min-height: 100%;
-    background-color: #c4e4dc;
-    padding: 10px;
+    margin-top: 60px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -45,6 +42,8 @@
 }
 .article label{
     font-size: 18px;
+    padding-top: 60px;
+    color: #212529;
 }
 .encriptar{
     display: flex;
@@ -59,19 +58,20 @@
 }
 .botones input, .btnCopiar{
     padding: 10px 40px;
-    background-color: #247260;
-    color: #fff;
+    background-color: white;
+    color: black;
     border-style: none;
+    border: 1px solid rgb(122, 121, 121);
 }
 .botones input:hover, .btnCopiar:hover{
-    background-color: #033d30;
+    background-color: #848d8b;
     cursor: pointer;
-    transition: 1s;
+    color: white;
+    transition: .5s;
 }
 .input_texto{
     width: 90%;
     padding: 10px;
-    background-color: #e2dfdc;
     border-style: none;
 }
 .desencriptar{
@@ -83,32 +83,45 @@
 .aside{
     grid-area: aside;
     color: #fff;
+    margin-top: 60px;
+    padding: 16px 32px;
 }
-.imagen_objetivo{
-    width: 100%;
+.instrucciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.objetivo{
+    font-size: 16px;
+    line-height: 30px;
+    color: #212529;
+}
+.cifrado_img{
+    width: 20%;
 }
 .footer{
     grid-area: footer;
+    background-color: #151515!important; 
     text-align: center;
     font-size: 18px;
     color: #fff;
+    padding: 16px 32px;
 }
 
 @media screen and (max-width:800px) {
     .container{
         grid-template-areas: "header header"
-                        "aside aside"
-                        "article article "
+                        "article article"
+                        "aside aside "
                         "footer footer";
 
     }
     .botones input, .btnCopiar{
         padding: 10px 20px;
-        background-color: #247260;
-        color: #fff;
-        border-style: none;
     }
-    .imagen_objetivo{
-        display: none;
+    .article{
+        margin-top: 110px;
     }
+
 }
