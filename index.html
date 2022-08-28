@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<head>
+	<title>Encriptador</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/encriptador.css">
+	<script src="https://kit.fontawesome.com/1aa7d7ac13.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="container">
+	<header class="header">
+		<h1 class="titulo_header">Encriptador y desencriptador</h1>
+		<hr class="line_header">
+		<p class="text_header">Esta herramienta le ayudará a encriptar y descencriptar texto</p>
+	</header>
+
+	<article class="article">
+		<div class="encriptar">
+			<label class="label" for="inputtexto">Solo letras minúsculas, sin acento</label>
+			<input class="input_texto" type="text" id="inputtexto" placeholder="Ingrese el texto aqui">
+			<ul class="botones">
+				<li><input type="button" id="encriptarTT" value="Encriptar"></li>
+				<li><input type="button" id="desencriptarTT" value="Desencriptar"></li>
+				<li><input type="button" id="limpiar" value="Limpiar"></li>
+			</ul>
+		</div>
+		<div class="desencriptar">
+			<label class="label" for="mensaje">Mensaje Encriptada</label>
+			<input class="input_texto" type="text" id="mensaje" placeholder="Ingrese el texto aqui">
+			<input class="btnCopiar" type="submit" value="Copiar" id="btn-copy">
+		</div>
+	</article>
+	<aside class="aside">
+		<div class="instrucciones">
+			<p class="objetivo">
+				Lo que se busca es que a partir de una palabra, frase que usted ingresa pueda encriptarla para comunicar
+				un mensaje que sea dificil de comprender por las demas personas excepto por usted.
+				Asimismo podra comprender el mensaje desencriptandola.
+			</p>
+			<img class="imagen_objetivo" src="img/objetivo.png" alt="">
+		</div>
+	</aside>
+	<footer class="footer">
+		<p>&copy; Desarrollado by &copy; Joel Llacsahuache Copia 2022</p>
+	</footer>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
